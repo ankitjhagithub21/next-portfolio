@@ -28,8 +28,8 @@ const skills = [
 
 const Skills = () => {
     return (
-        <div className="h-screen w-full flex items-center justify-center">
-            <div className="grid md:grid-cols-4 grid-cols-3 w-full  p-10 ">
+       
+            <div className="grid md:grid-cols-4 grid-cols-3 w-full max-w-6xl  lg:p-10 p-5">
                 {
                     skills.map((skill) => {
                         return <div key={skill.id} className=" my-5 relative">
@@ -41,7 +41,7 @@ const Skills = () => {
                     })
                 }
             </div>
-        </div>
+        
     )
 }
 

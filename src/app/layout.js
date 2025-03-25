@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import Menu from "@/components/Menu";
 
@@ -11,7 +12,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        <main className="h-screen w-full relative">
+        <main className="h-screen w-full relative overflow-hidden">
+          <Toaster/>
           <Menu />
           {children}
         </main>

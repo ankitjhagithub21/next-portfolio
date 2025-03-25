@@ -53,25 +53,25 @@ const Projects = () => {
     }
 
     return (
-        <div className='h-screen w-full flex flex-col p-5 items-center justify-center gap-5'>
 
-            <div className='flex md:flex-row flex-col items-center gap-5  justify-center'>
-                <button onClick={handlePrevProject} className='cursor-pointer bg-gray-500 hover:bg-gray-600 text-white rounded-full p-2'>
-                    <MdArrowLeft size={30} />
-                </button>
-                <div className='shadow-xl  max-w-[300px] w-full rounded-xl overflow-hidden'>
-                    <Image src={projects[index].image} alt={projects[index].name} width={300} height={250} />
-                    <div className='p-3'>
-                        <h2 className='mb-2 text-xl text-gray-800 font-semibold font-serif'>{projects[index].name}</h2>
-                        <p className='mb-2 font-mono'>{projects[index].description}</p>
-                        <a href={projects[index].live} target='_blank' className='underline text-blue-600'>Live Demo</a>
-                    </div>
+
+        <div className='flex md:flex-row flex-col items-center gap-5  justify-center'>
+            <button onClick={handlePrevProject} className='cursor-pointer bg-gray-500 hover:bg-gray-600 text-white rounded-full p-2'>
+                <MdArrowLeft size={30} />
+            </button>
+            <div className='shadow-xl  max-w-[300px] w-full rounded-xl overflow-hidden'>
+                <Image src={projects[index].image} alt={projects[index].name} width={300} height={250} />
+                <div className='p-3'>
+                    <h2 className='mb-2 text-xl text-gray-800 font-semibold font-serif'>{projects[index].name}</h2>
+                    <p className='mb-2 font-mono'>{projects[index].description}</p>
+                    <a href={projects[index].live} target='_blank' className='underline text-blue-600'>Live Demo</a>
                 </div>
-                <button className='cursor-pointer bg-green-500 text-white hover:bg-green-600 rounded-full p-2' onClick={handleNextProject}>
-                    <MdArrowRight size={30} />
-                </button>
             </div>
+            <button className='cursor-pointer bg-green-500 text-white hover:bg-green-600 rounded-full p-2' onClick={handleNextProject}>
+                <MdArrowRight size={30} />
+            </button>
         </div>
+
     )
 }
 

@@ -1,3 +1,4 @@
+import Heading from "@/components/Heading";
 import Projects from "@/components/Projects";
 
 export const metadata = {
@@ -20,8 +21,9 @@ export const metadata = {
 
 export default function ProjectPage(){
     return (
-        <>
+      <div className='h-screen w-full relative flex items-center justify-center'>
+        <Heading text={"My Projects"}/>
         <Projects/>
-        </>
+        </div>
     )
 }

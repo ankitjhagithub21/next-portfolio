@@ -1,3 +1,4 @@
+import Heading from "@/components/Heading";
 import Skills from "@/components/Skills";
 
 export const metadata = {
@@ -19,9 +20,10 @@ export const metadata = {
 
 const SkillPage = () => {
   return (
-    <>
+    <div className="h-screen w-full flex items-center justify-center relative">
+      <Heading text={"My Skills"}/>
       <Skills />
-    </>
+    </div>
   );
 };
 
