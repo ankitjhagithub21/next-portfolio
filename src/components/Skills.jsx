@@ -1,7 +1,7 @@
 import { FaBootstrap, FaCss3, FaHtml5, FaJava, FaJs, FaNodeJs, FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
-import { SiCplusplus, SiRedux, SiNextdotjs } from "react-icons/si";
+import { SiCplusplus, SiRedux, SiNextdotjs, SiNetlify } from "react-icons/si";
 
 const skills = [
     { id: 1, name: 'HTML', icon: <FaHtml5 color='#DD4B25' aria-label="HTML icon" /> },
@@ -20,6 +20,7 @@ const skills = [
 
     { id: 13, name: 'Next.js', icon: <SiNextdotjs color='black' aria-label="Next.js icon" /> },
     { id: 14, name: 'Github', icon: <FaGithub color='black' aria-label="Github icon" /> },
+    { id: 15, name: 'Netlify', icon: <SiNetlify color='#36A9B5' aria-label="Netlify icon" /> },
 
 
 ];
@@ -28,13 +29,13 @@ const skills = [
 const Skills = () => {
     return (
         <div className="h-screen w-full flex items-center justify-center">
-            <div className="grid md:grid-cols-5 grid-cols-3 w-full  p-10 ">
+            <div className="grid md:grid-cols-4 grid-cols-3 w-full  p-10 ">
                 {
                     skills.map((skill) => {
                         return <div key={skill.id} className=" my-5 relative">
                             
-                            <div className="w-fit h-full flex items-center justify-center mx-auto rounded-full cursor-pointer p-5 bg-gray-300 hover:shadow-2xl">
-                                <span className="md:text-6xl text-3xl">{skill.icon}</span>
+                            <div className="w-fit mx-auto bg-gray-200 rounded-lg p-2 hover:scale-105 cursor-pointer">
+                                <span className="text-5xl">{skill.icon}</span>
                             </div>
                         </div>
                     })

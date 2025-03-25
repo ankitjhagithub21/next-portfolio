@@ -5,9 +5,9 @@ import Image from 'next/image';
 const Home = () => {
   return (
     <div className="min-h-screen w-full flex gap-8 items-center justify-start">
-      <div className='flex flex-col gap-5 p-10'>
+      <div className='flex flex-col gap-5 md:p-10 p-5'>
         <div>
-          <p className="text-2xl mb-2 flex items-center gap-2">Hello and Welcome 
+          <p className="md:text-2xl text-xl mb-2 flex items-center gap-2">Hello and Welcome 
             <Image src={"/hi.gif"} alt='Hi Icon' width={30} height={30}/>
           </p>
           <h1 className="text-5xl uppercase md:text-8xl font-bold mb-6">

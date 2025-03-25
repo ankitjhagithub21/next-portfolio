@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { FaHome, FaWrench, FaPhone, FaUser } from "react-icons/fa"
+import { FaHome, FaWrench, FaPhone, FaUser, FaLaptopCode } from "react-icons/fa"
 
 const Menu = () => {
   return (
@@ -14,6 +14,9 @@ const Menu = () => {
       </Link>
       <Link href={"/skills"}>
         <FaWrench size={23} />
+      </Link>
+      <Link href={"/projects"}>
+        <FaLaptopCode size={23} />
       </Link>
 
       <Link href={"/contact"}>
