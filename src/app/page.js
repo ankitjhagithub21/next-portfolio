@@ -20,8 +20,8 @@ export const metadata = {
 
 export default function HomePage() {
   return (
-    <main>
+    <>
       <Home />
-    </main>
+    </>
   );
 }
