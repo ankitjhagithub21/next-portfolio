@@ -36,7 +36,7 @@ const Skills = () => {
                             <div className="absolute opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-gray-800  rounded-lg right-14 -top-6 px-3 py-1 text-sm">
                                 {skill.name}
                             </div>
-                            <div className="w-fit mx-auto bg-gray-200 rounded-lg p-2 cursor-pointer">
+                            <div className="w-fit mx-auto bg-gray-800/70 shadow-xl rounded-xl p-3 cursor-pointer">
                                 <span className="text-5xl">{skill.icon}</span>
                             </div>
                         </div>

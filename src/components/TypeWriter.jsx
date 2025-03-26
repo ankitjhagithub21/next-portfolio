@@ -4,7 +4,7 @@ import { Typewriter } from 'react-simple-typewriter';
 
 const TypeWriter = () => {
   return (
-    <h2 className="text-3xl my-5 font-serif tracking-wider text-green-600">
+    <h2 className="text-3xl my-5 font-serif tracking-wider text-green-400/70">
       <Typewriter 
       
         words={['Full Stack Developer', 'Freelancer', 'MCA Student']}

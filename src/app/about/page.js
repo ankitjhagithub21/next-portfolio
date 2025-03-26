@@ -16,7 +16,7 @@ export default function AboutPage() {
       <div className="min-h-screen w-full flex items-center justify-start">
         <div className="max-w-6xl w-full md:p-10 p-5">
      
-          <h1 className="lg:text-8xl text-5xl uppercase font-bold mb-5">WHO I&apos;M</h1>
+          <h1 className="lg:text-6xl text-5xl font-bold mb-5"><span className="text-blue-600 dark:text-blue-400">Who</span> I&apos;m</h1>
           <p className="font-serif leading-relaxed tracking-wide text-xl mb-6">
             I am Ankit Jha, originally from Bihar, India, and currently pursuing a Master of Computer Applications (MCA) at RGPV University. With a strong focus on web development, I specialize in building robust web applications using the MERN stack. I am actively seeking opportunities in the web development field to further enhance my skills and contribute to cutting-edge projects.
           </p>
