@@ -23,8 +23,8 @@ const Menu = () => {
             key={href}
             href={href}
             aria-label={label}
-            className={`p-3 rounded-full hover:bg-gray-200 dark:hover:bg-gray-800 transition-all duration-300 ${
-              isActive ? "bg-gray-300 dark:bg-gray-700" : ""
+            className={`p-3 rounded-full hover:bg-gray-200 dark:hover:bg-gray-600 text-blue-400 transition-all duration-300 ${
+              isActive ? "bg-gray-200 dark:bg-gray-600" : "bg-gray-800"
             }`}
           >
             {icon}
