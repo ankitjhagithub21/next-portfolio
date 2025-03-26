@@ -2,6 +2,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { FaHome, FaWrench, FaPhone, FaUser, FaLaptopCode } from "react-icons/fa";
+import { motion } from "motion/react";
 
 const menuItems = [
   { href: "/", icon: <FaHome size={25} />, label: "Home" },
@@ -15,7 +16,8 @@ const Menu = () => {
   const pathname = usePathname();
 
   return (
-    <nav className="fixed top-0 right-0 lg:h-full w-full lg:w-fit p-3 z-50 flex lg:flex-col flex-row items-center justify-center gap-3 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg rounded-lg">
+    <motion.nav className="fixed top-0 right-0 lg:h-full w-full lg:w-fit p-3 z-50 flex lg:flex-col flex-row items-center justify-center gap-3 bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-lg rounded-lg" initial={{ transform: "translateX(100%)" }}
+    animate={{ transform: "translateX(0)",transition: { duration: 0.5 ,ease: "easeOut",} }}>
       {menuItems.map(({ href, icon, label }) => {
         const isActive = pathname === href;
         return (
@@ -31,7 +33,7 @@ const Menu = () => {
           </Link>
         );
       })}
-    </nav>
+    </motion.nav>
   );
 };
 

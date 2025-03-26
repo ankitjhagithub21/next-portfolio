@@ -1,7 +1,9 @@
+'use client'
 import { FaBootstrap, FaCss3, FaHtml5, FaJava, FaJs, FaNodeJs, FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { DiMongodb } from "react-icons/di";
 import { SiCplusplus, SiRedux, SiNextdotjs, SiNetlify } from "react-icons/si";
+import { motion } from "motion/react"
 
 const skills = [
     { id: 1, name: 'HTML', icon: <FaHtml5 color='#DD4B25' aria-label="HTML icon" /> },
@@ -28,22 +30,22 @@ const skills = [
 
 const Skills = () => {
     return (
-       
-            <div className="grid md:grid-cols-4 grid-cols-3 w-full max-w-6xl  lg:p-10 p-5">
-                {
-                    skills.map((skill) => {
-                        return <div key={skill.id} className=" my-5 relative group">
-                            <div className="absolute opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-gray-800  rounded-lg right-14 -top-6 px-3 py-1 text-sm">
-                                {skill.name}
-                            </div>
-                            <div className="w-fit mx-auto bg-gray-800/70 shadow-xl rounded-xl p-3 cursor-pointer">
-                                <span className="text-5xl">{skill.icon}</span>
-                            </div>
+
+        <div className="grid md:grid-cols-4 grid-cols-3 w-full max-w-6xl  lg:p-10 p-5">
+            {
+                skills.map((skill) => {
+                    return <motion.div key={skill.id} className=" my-5 relative group" initial={{ scale: 0 }} animate={{ scale: 1, transition: { duration: 0.2 } }} whileHover={{ scale: 1.1 }}>
+                        <div className="absolute opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-gray-800  rounded-lg right-14 -top-6 px-3 py-1 text-sm">
+                            {skill.name}
                         </div>
-                    })
-                }
-            </div>
-        
+                        <div className="w-fit mx-auto bg-gray-800/70 shadow-xl rounded-xl p-3 cursor-pointer">
+                            <span className="text-5xl">{skill.icon}</span>
+                        </div>
+                    </motion.div>
+                })
+            }
+        </div>
+
     )
 }
 
