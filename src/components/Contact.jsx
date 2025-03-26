@@ -1,7 +1,7 @@
 'use client'
 import { useState, useRef } from 'react';
 import toast from 'react-hot-toast';
-
+import { IoIosSend } from "react-icons/io";
 const Contact = () => {
 
   const form = useRef();
@@ -40,7 +40,7 @@ const Contact = () => {
       setLoading(false);
     });
   };
-
+ const className = "border-b outline-none  border-gray-500 p-2"
   return (
     
       <div className="max-w-xl w-full p-5">
@@ -48,15 +48,20 @@ const Contact = () => {
         <form ref={form} className='flex flex-col  gap-5' onSubmit={sendEmail}>
        
           <h2 className='text-2xl '>Get In Touch</h2>
-            <input type="text" id="name" name="name" placeholder='Enter your name' className='border rounded-lg border-gray-500 p-2' required autoComplete='off'/>
+            <input type="text" id="name" name="name" className={className} placeholder='Enter your name' required autoComplete='off'/>
          
-            <input type="email" id="email" name="email" placeholder='Enter your email' className='border rounded-lg border-gray-500 p-2' required autoComplete='off'/>
+            <input type="email" id="email" name="email" placeholder='Enter your email' className={className} required autoComplete='off'/>
          
-            <textarea id="message" name="message" placeholder='Enter your message' className='border rounded-lg border-gray-500 p-2 resize-none' rows="5" required ></textarea>
+            <textarea id="message" name="message" placeholder='Enter your message' className= {`${className} resize-none`} rows="5" required ></textarea>
           
-          <button type="submit" disabled={loading} className='bg-green-500 hover:bg-green-600 text-white rounded-lg cursor-pointer px-4 py-2'>
-            {loading ? 'Sending...' : 'Send Message'}
+          <div className='text-right mt-4'>
+          <button type="submit" disabled={loading} className='border bg-green-600 text-white cursor-pointer border-gray-500 px-4 py-2'>
+            {loading ? 'Sending...' : <p className='flex items-center   justify-center gap-2'>
+            <span className='text-lg'>Send Message</span> <IoIosSend size={20}/>
+            </p>}
+
           </button>
+          </div>
         </form>
       </div>
     

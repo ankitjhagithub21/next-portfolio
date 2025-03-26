@@ -1,4 +1,3 @@
-import { Toaster } from "react-hot-toast";
 import "./globals.css";
 import Menu from "@/components/Menu";
 
@@ -11,9 +10,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <main className="h-screen w-full relative overflow-hidden">
-          <Toaster/>
+      <body  cz-shortcut-listen="true">
+        <main className="h-screen w-full relative overflow-hidden bg-[#2f3640] text-gray-100">
+          
           <Menu />
           {children}
         </main>

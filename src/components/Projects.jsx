@@ -62,7 +62,7 @@ const Projects = () => {
             <div className='shadow-xl  max-w-[300px] w-full rounded-xl overflow-hidden'>
                 <Image src={projects[index].image} alt={projects[index].name} width={300} height={250} />
                 <div className='p-3'>
-                    <h2 className='mb-2 text-xl text-gray-800 font-semibold font-serif'>{projects[index].name}</h2>
+                    <h2 className='mb-2 text-2xl tracking-wider  font-serif'>{projects[index].name}</h2>
                     <p className='mb-2 font-mono'>{projects[index].description}</p>
                     <a href={projects[index].live} target='_blank' className='underline text-blue-600'>Live Demo</a>
                 </div>

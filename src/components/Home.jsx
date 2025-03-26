@@ -7,10 +7,10 @@ const Home = () => {
     <div className="min-h-screen w-full flex gap-8 items-center justify-start">
       <div className='flex flex-col gap-5 md:p-10 p-5'>
         <div>
-          <p className="md:text-2xl text-xl mb-2 flex items-center gap-2">Hello and Welcome 
+          <p className="md:text-2xl text-xl mb-2 flex items-center gap-2 font-serif tracking-wider">Hello and Welcome 
             <Image src={"/hi.gif"} alt='Hi Icon' width={30} height={30}/>
           </p>
-          <h1 className="text-5xl uppercase md:text-8xl font-bold mb-6">
+          <h1 className="text-4xl uppercase md:text-5xl lg:text-8xl font-bold mb-6">
             I'm Ankit Jha
           </h1>
           <h2 className="text-3xl font-semibold my-5">
