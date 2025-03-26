@@ -46,9 +46,9 @@ const Contact = () => {
     
       <div className="max-w-xl w-full p-5">
        
-        <form ref={form} className='flex flex-col  gap-5' onSubmit={sendEmail}>
+        <form ref={form} className='flex flex-col  gap-8' onSubmit={sendEmail}>
        
-          <h2 className='text-2xl '>Get In Touch</h2>
+          <h2 className='text-3xl font-serif tracking-wider'>Get In Touch</h2>
             <input type="text" id="name" name="name" className={className} placeholder='Enter your name' required autoComplete='off'/>
          
             <input type="email" id="email" name="email" placeholder='Enter your email' className={className} required autoComplete='off'/>

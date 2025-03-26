@@ -32,9 +32,11 @@ const Skills = () => {
             <div className="grid md:grid-cols-4 grid-cols-3 w-full max-w-6xl  lg:p-10 p-5">
                 {
                     skills.map((skill) => {
-                        return <div key={skill.id} className=" my-5 relative">
-                            
-                            <div className="w-fit mx-auto bg-gray-200 rounded-lg p-2 hover:scale-105 cursor-pointer">
+                        return <div key={skill.id} className=" my-5 relative group">
+                            <div className="absolute opacity-0 transition-opacity duration-300 group-hover:opacity-100 bg-gray-800  rounded-lg right-14 -top-6 px-3 py-1 text-sm">
+                                {skill.name}
+                            </div>
+                            <div className="w-fit mx-auto bg-gray-200 rounded-lg p-2 cursor-pointer">
                                 <span className="text-5xl">{skill.icon}</span>
                             </div>
                         </div>
