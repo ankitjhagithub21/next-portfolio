@@ -55,7 +55,7 @@ const Contact = () => {
             <textarea id="message" name="message" placeholder='Enter your message' className= {`${className} resize-none`} rows="5" required ></textarea>
           
           <div className='text-right mt-4'>
-          <button type="submit" disabled={loading} className='border bg-green-600 text-white cursor-pointer border-gray-500 px-4 py-2'>
+          <button type="submit" disabled={loading} className='border bg-gray-800 hover:bg-gray-900 shadow-xl text-white cursor-pointer border-gray-500 px-4 py-2'>
             {loading ? 'Sending...' : <p className='flex items-center   justify-center gap-2'>
             <span className='text-lg'>Send Message</span> <IoIosSend size={20}/>
             </p>}

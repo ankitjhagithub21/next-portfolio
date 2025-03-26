@@ -17,12 +17,12 @@ export default function AboutPage() {
         <div className="max-w-6xl w-full md:p-10 p-5">
      
           <h1 className="lg:text-8xl text-5xl uppercase font-bold mb-5">WHO I&apos;M</h1>
-          <p className="font-serif leading-relaxed tracking-wide text-xl mb-5">
+          <p className="font-serif leading-relaxed tracking-wide text-xl mb-6">
             I am Ankit Jha, originally from Bihar, India, and currently pursuing a Master of Computer Applications (MCA) at RGPV University. With a strong focus on web development, I specialize in building robust web applications using the MERN stack. I am actively seeking opportunities in the web development field to further enhance my skills and contribute to cutting-edge projects.
           </p>
-          <button className="font-serif border-b-2 border-green-600 pb-2 cursor-pointer">
+          <a href="/resume.pdf" target='_blank'  className='bg-gray-800 border border-gray-500 hover:bg-gray-900 px-4 py-2'>
             My Resume
-          </button>
+          </a>
         </div>
       </div>
     

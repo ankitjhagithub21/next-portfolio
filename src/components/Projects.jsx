@@ -61,10 +61,12 @@ const Projects = () => {
             </button>
             <div className='shadow-xl  max-w-[300px] w-full rounded-xl overflow-hidden'>
                 <Image src={projects[index].image} alt={projects[index].name} width={300} height={250} />
-                <div className='p-3'>
+                <div className='p-5'>
                     <h2 className='mb-2 text-2xl tracking-wider  font-serif'>{projects[index].name}</h2>
-                    <p className='mb-2 font-mono'>{projects[index].description}</p>
-                    <a href={projects[index].live} target='_blank' className='underline text-blue-600'>Live Demo</a>
+                    <p className='mb-4 font-mono'>{projects[index].description}</p>
+                  <div className='text-right'>
+                  <a href={projects[index].live} target='_blank'  className='bg-gray-800 border border-gray-500 hover:bg-gray-900 px-4 py-2'>Live Demo</a>
+                  </div>
                 </div>
             </div>
             <button className='cursor-pointer bg-green-500 text-white hover:bg-green-600 rounded-full p-2' onClick={handleNextProject}>
