@@ -40,6 +40,7 @@ const Contact = () => {
       setLoading(false);
     });
   };
+  
  const className = "border-b outline-none  border-gray-500 p-2"
   return (
     

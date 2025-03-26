@@ -59,7 +59,7 @@ const Projects = () => {
             <button onClick={handlePrevProject} className='cursor-pointer bg-gray-500 hover:bg-gray-600 text-white rounded-full p-2'>
                 <MdArrowLeft size={30} />
             </button>
-            <div className='shadow-xl  max-w-[300px] w-full rounded-xl overflow-hidden'>
+            <div className='shadow-xl  max-w-[300px]  bg-white/80 dark:bg-gray-900/80 backdrop-blur-md w-full rounded-xl overflow-hidden'>
                 <Image src={projects[index].image} alt={projects[index].name} width={300} height={250} />
                 <div className='p-5'>
                     <h2 className='mb-2 text-2xl tracking-wider  font-serif'>{projects[index].name}</h2>

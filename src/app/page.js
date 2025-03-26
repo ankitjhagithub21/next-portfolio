@@ -18,6 +18,7 @@ export const metadata = {
     title: "Ankit Jha | Full Stack Developer & Freelancer",
     description: "Explore my work as a Full Stack Developer and Freelancer.",
   },
+  
 };
 
 export default function HomePage() {
