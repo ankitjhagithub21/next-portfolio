@@ -15,6 +15,9 @@ export const metadata = {
     "Next.js",
     "MERN Stack",
     "MCA Student",
+    "Portfolio",
+    "Ankit Jha Portfolio",
+    "Ankit Portfolio"
   ],
   openGraph: {
     title: "Ankit Jha | Full Stack Developer & Freelancer",

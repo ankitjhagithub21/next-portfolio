@@ -4,7 +4,7 @@ import Menu from "@/components/Menu";
 export const metadata = {
   title: "Ankit Jha | Full Stack Developer & Freelancer",
   description:
-    "I am a Full Stack Developer specializing in React, Next.js, Node.js, and MongoDB. I create high-performance, scalable, and SEO-friendly web applications. Let's build something amazing together!",
+  "MERN Stack Developer & Freelancer - Ankit Jha | MCA Student at LNCT College Bhopal | Based in Banka, Bihar",
   keywords: [
     "Ankit Jha",
     "Full Stack Developer",
@@ -13,7 +13,10 @@ export const metadata = {
     "React Developer",
     "Next.js",
     "MERN Stack",
-    "SEO Optimization",
+    "MCA Student",
+    "Ankit Jha Portfolio",
+    "Ankit Portfolio",
+    "Javascript developer"
   ],
   openGraph: {
     title: "Ankit Jha | Full Stack Developer & Freelancer",
